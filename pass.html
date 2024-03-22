@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <title> Petal Perfection Boutique </title>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+    <div class="bgblur">
+        <img src="C:\Users\RICHELLE\Downloads\welcome.jpg">
+    </div>     
+        
+    <div class="wrapper1">
+        <p>Enter your phone number or email recovery<p>
+        <form action="#">
+            <input type="text" placeholder="Phone number or email" id="email">
+        </form>
+     
+        <button onclick="validateNext()">Next</button>
+    </div>
+
+    <script>
+        function validateNext() {
+            var email = document.getElementById("email").value;
+            var emailRegex = /@gmail\.com$/;
+    
+            if (email.trim() !== "" ) {
+                if (emailRegex.test(email)) {
+                window.location.href = "./password.html";
+                alert ("The code is already sent to your phone number or email")
+            } else {
+                alert("Please enter a valid email address.");
+            } 
+        } else {
+                alert("Please enter your phone number or email.");
+            } 
+        }
+    </script>
+</body>
+</html>

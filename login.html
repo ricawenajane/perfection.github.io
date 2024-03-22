@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <title> Petal Perfection Boutique </title>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+    <div class="bgblur">
+        <img src="C:\Users\RICHELLE\Downloads\welcome.jpg">
+    </div>
+
+    <div class="wrapper1">
+        <img src="C:\Users\RICHELLE\Downloads\logo.png">
+        <form action="#">
+            <input type="text" placeholder="Username" id="usernameInput">
+            <input type="password" placeholder="Password" id="passwordInput">
+        </form>
+        <div class="recover">
+            <a href="./pass.html"> Forgot Password? </a>
+        </div>
+
+        <button onclick="validateLogin()">Login</button>
+
+        <div class="member">
+            Not a member? <a href="./signup.html"> Register Now </a>
+        </div>
+    </div>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("usernameInput").value;
+            var password = document.getElementById("passwordInput").value;
+    
+            if (username.trim() !== "" && password.trim() !== "") {
+                window.location.href = "./home.html";
+            } else {
+                alert("Please enter your username and password.");
+            }
+        }
+    </script>
+
+</body>
+</html>

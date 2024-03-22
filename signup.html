@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <title> Petal Perfection Boutique </title>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+    <div class="bgblur">
+        <img src="C:\Users\RICHELLE\Downloads\welcome.jpg">
+    </div>     
+        
+    <div class="wrapper1">
+        <img src="C:\Users\RICHELLE\Downloads\logo.png">
+        <form id="signupForm" action="#">
+            <input type="text" placeholder="Username" id="username">
+            <input type="text" placeholder="Name" id="name">
+            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Re-enter Password" id="confirmPassword">
+        </form>
+        <div class="terms">
+            <input type="checkbox" id="termsCheckbox">
+            <label for="termsCheckbox">I agree to these <a href="#">Terms & Conditions</a></label>
+        </div>
+        <button onclick="validateSignUp()">Sign Up</button>
+        <div class="member">
+            Already a member? <a href="./login.html">Login Here</a>
+        </div>
+    </div>
+
+    <script>
+        function validateSignUp() {
+            var username = document.getElementById("username").value;
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var termsCheckbox = document.getElementById("termsCheckbox").checked;
+    
+            if (username.trim() !== "" && name.trim() !== "" && password.trim() !== "" && confirmPassword.trim() !== "" && termsCheckbox) {
+                window.location.href = "./login.html";
+            } else {
+                alert("Please fill in all fields and agree to the terms and conditions.");
+            }
+        }
+    </script>
+</body>
+</html>

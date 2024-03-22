@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <title> Petal Perfection Boutique </title>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+    <div class="bgblur">
+        <img src="C:\Users\RICHELLE\Downloads\welcome.jpg">
+    </div>     
+        
+    <div class="wrapper1">
+        <p>Enter your new password<p>
+        <form action="#">
+            <input type="password" placeholder="Enter new password" id="password">
+            <input type="password" placeholder="Re-enter new password" id="confirmPassword">
+        </form>
+     
+        <button onclick="validateConfirm()">Confirm</button>
+    </div>
+
+    <script>
+        function validateConfirm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+    
+            if (password.trim() !== ""  && confirmPassword.trim() !== "" ) {
+                if (password === confirmPassword) {
+                
+                window.location.href = "./login.html";  
+             } else {
+            alert("The password you entered doesn't match.");
+          }
+        } else {
+                alert("Please fill up this first.");
+            }
+        }
+    </script>
+</body>
+</html>

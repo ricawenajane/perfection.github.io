@@ -1,0 +1,103 @@
+body {
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+    font-family:  "Montserrat", sans-serif;
+}
+.bgblur {
+  position: fixed;
+  width: 1280px;
+  height: 590px;
+}
+.wrapper1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    padding: 2rem 1rem;
+    background-color:  #a56ca5;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+
+  }
+  h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 50px;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+  }
+  form input {
+    width: 87%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+  }
+  button {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    background: #10091D;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #28193D;
+  }
+  input:focus {
+    border: 1px solid rgb(192, 192, 192);
+  }
+  .terms {
+  margin-top: 0.2rem;
+  }
+  .terms input {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+  }
+  .terms label {
+  font-size: 13px;
+  color: #d9d8d9;
+  }
+  .terms a {
+  color: black;
+  text-decoration: none;
+  }
+  .member {
+  font-size: 13px;
+  margin-top: 1.4rem;
+  color: #d9d8d9;
+  }
+  .member a {
+  color: black;
+  text-decoration: none;
+  }
+  .recover {
+  text-align: right;
+  font-size: 15px;
+  margin: 0.3rem 1.4 rem 0 0;
+  }
+  .recover a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  
+  }
+  
+.wrapper1 img {
+    width: 80px;
+    height: 80px;
+}
